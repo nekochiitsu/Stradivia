@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://ouq7ej8t5j03"]
+
+[ext_resource type="Texture2D" uid="uid://be3asx4g5eisg" path="res://Sprites/weapons/sniper.png" id="1"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [ExtResource("1")],
+"loop": true,
+"name": &"Sniper",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="2"]
+
+[sub_resource type="CapsuleShape2D" id="3"]
+
+[node name="Dropped_weapon" type="StaticBody2D"]
+collision_layer = 0
+collision_mask = 256
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+frames = SubResource("1")
+animation = &"Sniper"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("2")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.5708
+shape = SubResource("3")

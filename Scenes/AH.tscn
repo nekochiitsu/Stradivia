@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3ygb1325p6qp"]
+
+[ext_resource type="Texture2D" uid="uid://bj2cbe1vr58af" path="res://Sprites/Divers/AH.png" id="1_627r1"]
+[ext_resource type="Script" path="res://Scripts/hit_particle.gd" id="2_5qyyg"]
+
+[sub_resource type="Curve" id="Curve_2yt37"]
+_data = [Vector2(0.00442478, 1), 0.0, 0.54067, 0, 0, Vector2(1, 0.509091), -2.94783, 0.0, 0, 0]
+point_count = 2
+
+[node name="Node2d" type="CPUParticles2D"]
+z_index = -2
+emitting = false
+amount = 1
+lifetime = 0.7
+one_shot = true
+texture = ExtResource("1_627r1")
+emission_shape = 1
+emission_sphere_radius = 8.0
+direction = Vector2(-1, -1)
+gravity = Vector2(0, -25)
+initial_velocity_min = 60.0
+initial_velocity_max = 100.0
+damping_min = 20.0
+damping_max = 40.0
+scale_amount_curve = SubResource("Curve_2yt37")
+script = ExtResource("2_5qyyg")

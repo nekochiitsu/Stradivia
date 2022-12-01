@@ -1,0 +1,58 @@
+[gd_scene load_steps=8 format=3 uid="uid://ddmvynnjqvey4"]
+
+[ext_resource type="Script" path="res://Scripts/ennemies/basebot.gd" id="1_w5j6x"]
+[ext_resource type="Texture2D" uid="uid://b2e0jxy11yr5t" path="res://Sprites/ennemies/basebot/robot2.png" id="2_62g0h"]
+[ext_resource type="Texture2D" uid="uid://rwntuwab3nxi" path="res://Sprites/ennemies/basebot/robot1.png" id="2_n1leo"]
+[ext_resource type="Script" path="res://Scenes/MobHitbox.gd" id="4_7j5n6"]
+[ext_resource type="Script" path="res://Scripts/name.gd" id="4_j17tw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y7nhi"]
+animations = [{
+"frames": [ExtResource("2_62g0h")],
+"loop": true,
+"name": &"damages",
+"speed": 5.0
+}, {
+"frames": [ExtResource("2_n1leo")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lh4kq"]
+size = Vector2(10.75, 24)
+
+[node name="Node2d" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 256
+script = ExtResource("1_w5j6x")
+
+[node name="Sprite2d" type="AnimatedSprite2D" parent="."]
+frames = SubResource("SpriteFrames_y7nhi")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_lh4kq")
+
+[node name="Area2d" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("4_7j5n6")
+
+[node name="CollisionShape2d2" type="CollisionShape2D" parent="Area2d"]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_lh4kq")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = -13.0
+offset_bottom = -11.0
+
+[node name="Label" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -1.0
+offset_right = 3.0
+offset_bottom = 0.5
+script = ExtResource("4_j17tw")

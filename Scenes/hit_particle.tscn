@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dnqise881blr"]
+
+[ext_resource type="Script" path="res://Scripts/hit_particle.gd" id="1_0c4ro"]
+
+[sub_resource type="Curve" id="Curve_y2c03"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), -3.59546, 0.0, 0, 0]
+point_count = 2
+
+[node name="Node2d" type="CPUParticles2D"]
+emitting = false
+one_shot = true
+explosiveness = 1.0
+emission_shape = 1
+emission_sphere_radius = 7.0
+direction = Vector2(45, -45)
+spread = 25.0
+initial_velocity_min = 140.5
+initial_velocity_max = 289.26
+angular_velocity_max = 464.13
+damping_min = 1.65
+damping_max = 3.31
+scale_amount_min = 0.8
+scale_amount_max = 1.2
+scale_amount_curve = SubResource("Curve_y2c03")
+color = Color(1, 0.172549, 0.462745, 1)
+hue_variation_min = -0.83
+hue_variation_max = 0.43
+script = ExtResource("1_0c4ro")

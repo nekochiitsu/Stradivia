@@ -1,0 +1,343 @@
+[gd_scene load_steps=90 format=3 uid="uid://clmt62w2kgu6b"]
+
+[ext_resource type="Texture2D" uid="uid://tiiu0xcu1c54" path="res://Sprites/Androide/Body/body2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://baopubjqgp22l" path="res://Sprites/Androide/Body/body3.png" id="2"]
+[ext_resource type="Script" path="res://Scripts/Androide/ComputeCheveux.gd" id="2_86n5q"]
+[ext_resource type="Texture2D" uid="uid://3sxg25r5d1p6" path="res://Sprites/Androide/Body/body4.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ckbx6ugtek2f7" path="res://Sprites/Androide/Head/head1.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c7b8dy8tyamr4" path="res://Sprites/Androide/Head/head2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dxn2rjucl3b6g" path="res://Sprites/Androide/Head/head4.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dcw46pb5etpko" path="res://Sprites/Androide/Body/body1.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bryqt6veqiidj" path="res://Sprites/Androide/Head/head3.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cbt7pq7din4jy" path="res://Sprites/Androide/Arms/lbrasbase.png" id="9_5bv1p"]
+[ext_resource type="Texture2D" uid="uid://cgc4e05ndsbfa" path="res://Sprites/Androide/Arms/rbrasbase.png" id="9_njot6"]
+[ext_resource type="Script" path="res://Scripts/Androide/Androide.gd" id="10"]
+[ext_resource type="Script" path="res://Scripts/Androide/parts.gd" id="11"]
+[ext_resource type="Script" path="res://Scripts/Androide/Body.gd" id="12"]
+[ext_resource type="Texture2D" uid="uid://p266xlwc8sf8" path="res://Sprites/Androide/Head/head_nohair.png" id="13"]
+[ext_resource type="Script" path="res://Scripts/Bras.gd" id="14"]
+[ext_resource type="Texture2D" uid="uid://dpcnbkcr5pxr7" path="res://Sprites/Androide/Arms/sword/sword8.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://38caudr37r7m" path="res://Sprites/Androide/Arms/flat_bras3.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dj50rsbjyxrkk" path="res://Sprites/Androide/Arms/flat_bras2.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://b2phpr1gma74y" path="res://Sprites/Androide/Arms/sword/sword10.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bky00kmxrbc16" path="res://Sprites/Androide/Arms/sword/sword13.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://ch0ohirtqj1i5" path="res://Sprites/Androide/Arms/sword/sword11.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bkanqqfk57t0i" path="res://Sprites/Androide/Arms/sword/sword12.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://b3psiruanwwh" path="res://Sprites/Androide/Arms/sword/sword9.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://dide4lqgp6pdu" path="res://Sprites/Androide/Arms/sword/sword7.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://gyltop14la51" path="res://Sprites/Androide/Arms/pistol/pistol7.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://mqkfmmdre4x7" path="res://Sprites/Androide/Arms/pistol/pistol5.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://8d2t5og4gicc" path="res://Sprites/Androide/Arms/pistol/pistol9.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://8iiwrmwjnfhn" path="res://Sprites/Androide/Arms/pistol/pistol8.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://cmidxyandtvf4" path="res://Sprites/Androide/Arms/pistol/pistol4.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://5pjk4o6ejbc4" path="res://Sprites/Androide/Arms/pistol/pistol2.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://dot6ty50f2khk" path="res://Sprites/Androide/Arms/pistol/pistol3.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://csqj2iwwjmbgc" path="res://Sprites/Androide/Arms/pistol/pistol6.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://duks851btrxet" path="res://Sprites/Androide/Arms/pistol/pistol10.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://homomoat8o65" path="res://Sprites/Androide/Arms/shotgun/shotgun5.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://6sgm02o20h76" path="res://Sprites/Androide/Arms/shotgun/shotgun2.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://kmd8bawyjhqs" path="res://Sprites/Androide/Arms/shotgun/shotgun6.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://uoy3oaa5lb2x" path="res://Sprites/Androide/Arms/shotgun/shotgun11.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://c4881ak8pvyii" path="res://Sprites/Androide/Arms/shotgun/shotgun7.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://b2o3eqbqembhb" path="res://Sprites/Androide/Arms/shotgun/shotgun12.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://uo53kiypde2n" path="res://Sprites/Androide/Arms/shotgun/shotgun8.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://dla7s66itt738" path="res://Sprites/Androide/Arms/shotgun/shotgun13.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://df07y33llv6ao" path="res://Sprites/Androide/Arms/shotgun/shotgun15.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://vc8twpyhlj15" path="res://Sprites/Androide/Arms/shotgun/shotgun17.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://cqrobgswhmw2i" path="res://Sprites/Androide/Arms/shotgun/shotgun14.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://dqgysesyg3j0q" path="res://Sprites/Androide/Arms/shotgun/shotgun16.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://cnbxrueldyb13" path="res://Sprites/Androide/Arms/sniper/sniper11.png" id="45_8xlu6"]
+[ext_resource type="Texture2D" uid="uid://d2adpvicpib25" path="res://Sprites/Androide/Arms/shotgun/shotgun4.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://6ffjb5ke21v4" path="res://Sprites/Androide/Arms/shotgun/shotgun3.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://dbdwepvo6fai3" path="res://Sprites/Androide/Arms/shotgun/shotgun9.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://c2ip6q2wd1vsv" path="res://Sprites/Androide/Arms/shotgun/shotgun10.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://vxhisjtnfajk" path="res://Sprites/Androide/Arms/sword/larm/larm9.png" id="49_tvajn"]
+[ext_resource type="Texture2D" uid="uid://bj6sxrvuumb4b" path="res://Sprites/Androide/Arms/sword/sword2.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://borshb3wfe8ve" path="res://Sprites/Androide/Arms/sword/larm/larm10.png" id="50_dcatp"]
+[ext_resource type="Texture2D" uid="uid://cn6o678xjbews" path="res://Sprites/Androide/Arms/sword/sword4.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://1jps7ioli0wg" path="res://Sprites/Androide/Arms/sword/larm/larm11.png" id="51_qpw47"]
+[ext_resource type="Texture2D" uid="uid://cuonbfia81iqa" path="res://Sprites/Androide/Arms/sniper/sniper10.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://f2yj6kobayb1" path="res://Sprites/Androide/Arms/sword/larm/larm12.png" id="52_ls0gl"]
+[ext_resource type="Texture2D" uid="uid://datxg72j42uwy" path="res://Sprites/Androide/Arms/sword/sword5.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://dsx70xvvraa7j" path="res://Sprites/Androide/Arms/sword/larm/larm13.png" id="53_rmxr3"]
+[ext_resource type="Texture2D" uid="uid://s1uu7afis4bj" path="res://Sprites/Androide/Arms/sword/sword3.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://bol1ftvvrdtsx" path="res://Sprites/Androide/Arms/sword/larm/larm5.png" id="54_laj1x"]
+[ext_resource type="Texture2D" uid="uid://darvajk2mruoy" path="res://Sprites/Androide/Arms/sword/sword6.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://cn6wfnmc0f5y3" path="res://Sprites/Androide/Arms/sword/larm/larm7.png" id="55_wh5aa"]
+[ext_resource type="Texture2D" uid="uid://cp2t614d1qptq" path="res://Sprites/Androide/Arms/sniper/sniper3.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://bphl0ggmy8xqu" path="res://Sprites/Androide/Arms/sword/larm/larm6.png" id="56_pl52u"]
+[ext_resource type="Texture2D" uid="uid://kqcw7pli7b44" path="res://Sprites/Androide/Arms/sniper/sniper2.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://b5e8ekwe6rtgx" path="res://Sprites/Androide/Arms/sword/larm/larm8.png" id="57_7upn0"]
+[ext_resource type="Texture2D" uid="uid://rj8q2o2ief8c" path="res://Sprites/Androide/Arms/sniper/sniper6.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://dmg6h62vbmvb0" path="res://Sprites/Androide/Arms/sword/larm/larm1.png" id="58_5c88w"]
+[ext_resource type="Texture2D" uid="uid://cwo62bi138mn5" path="res://Sprites/Androide/Arms/sniper/sniper7.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://cwhy3phu4yqno" path="res://Sprites/Androide/Arms/sword/larm/larm2.png" id="59_bn7xw"]
+[ext_resource type="Texture2D" uid="uid://xlqwlqpkhm0j" path="res://Sprites/Androide/Arms/sword/larm/larm3.png" id="60_voeqc"]
+[ext_resource type="Texture2D" uid="uid://ng2pjqnk4psk" path="res://Sprites/Androide/Arms/sniper/sniper4.png" id="61"]
+[ext_resource type="Texture2D" uid="uid://keefrga6083h" path="res://Sprites/Androide/Arms/sword/larm/larm4.png" id="61_y6ipk"]
+[ext_resource type="Texture2D" uid="uid://bbcjmtjl5ith6" path="res://Sprites/Androide/Arms/sniper/sniper8.png" id="62"]
+[ext_resource type="Script" path="res://Scripts/Androide/Bras gauche.gd" id="62_jphkh"]
+[ext_resource type="Texture2D" uid="uid://b2khrfvvmfrtl" path="res://Sprites/Androide/Arms/sniper/sniper5.png" id="63"]
+[ext_resource type="Texture2D" uid="uid://d168a51bwb26e" path="res://Sprites/Androide/Arms/shotgun/shotgun19.png" id="64"]
+[ext_resource type="Texture2D" uid="uid://d22psijx8kxt0" path="res://Sprites/Androide/Arms/sniper/sniper9.png" id="65"]
+[ext_resource type="Texture2D" uid="uid://buqsx8romul7o" path="res://Sprites/Androide/Arms/sword/sword1.png" id="66"]
+[ext_resource type="Texture2D" uid="uid://bag5alaye6t64" path="res://Sprites/Androide/Arms/pistol/pistol1.png" id="67"]
+[ext_resource type="Script" path="res://Scripts/Androide/hitbox.gd" id="83_p0sjc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_i437s"]
+radius = 6.0
+height = 22.0
+
+[sub_resource type="SpriteFrames" id="4"]
+animations = [{
+"frames": [ExtResource("7"), ExtResource("7"), ExtResource("7"), ExtResource("7"), ExtResource("7"), ExtResource("7"), ExtResource("7"), ExtResource("1"), ExtResource("2"), ExtResource("2"), ExtResource("3")],
+"loop": true,
+"name": &"exist",
+"speed": 3.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbh5b"]
+animations = [{
+"frames": [ExtResource("9_njot6")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [ExtResource("67")],
+"loop": true,
+"name": &"pistol idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("30"), ExtResource("31"), ExtResource("29"), ExtResource("26")],
+"loop": true,
+"name": &"pistol melee",
+"speed": 12.0
+}, {
+"frames": [ExtResource("32"), ExtResource("25"), ExtResource("28"), ExtResource("27"), ExtResource("33")],
+"loop": true,
+"name": &"pistol shoot",
+"speed": 12.0
+}, {
+"frames": [ExtResource("17")],
+"loop": true,
+"name": &"shotgun idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("35"), ExtResource("47"), ExtResource("46"), ExtResource("34"), ExtResource("36"), ExtResource("38"), ExtResource("40")],
+"loop": true,
+"name": &"shotgun melee",
+"speed": 12.0
+}, {
+"frames": [ExtResource("44"), ExtResource("42"), ExtResource("45"), ExtResource("43"), ExtResource("64")],
+"loop": true,
+"name": &"shotgun reload",
+"speed": 12.0
+}, {
+"frames": [ExtResource("48"), ExtResource("49"), ExtResource("37"), ExtResource("39"), ExtResource("41")],
+"loop": true,
+"name": &"shotgun shoot",
+"speed": 12.0
+}, {
+"frames": [ExtResource("18")],
+"loop": true,
+"name": &"sniper idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("57"), ExtResource("45_8xlu6"), ExtResource("56"), ExtResource("61"), ExtResource("63")],
+"loop": true,
+"name": &"sniper melee",
+"speed": 12.0
+}, {
+"frames": [ExtResource("58"), ExtResource("59"), ExtResource("62"), ExtResource("65"), ExtResource("52")],
+"loop": true,
+"name": &"sniper shoot",
+"speed": 12.0
+}, {
+"frames": [ExtResource("49_tvajn"), ExtResource("50_dcatp"), ExtResource("51_qpw47"), ExtResource("52_ls0gl"), ExtResource("53_rmxr3")],
+"loop": true,
+"name": &"sword estoc",
+"speed": 12.0
+}, {
+"frames": [ExtResource("54_laj1x"), ExtResource("55_wh5aa"), ExtResource("57_7upn0"), ExtResource("56_pl52u")],
+"loop": true,
+"name": &"sword hit",
+"speed": 12.0
+}, {
+"frames": [ExtResource("58_5c88w")],
+"loop": true,
+"name": &"sword idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("59_bn7xw"), ExtResource("60_voeqc"), ExtResource("61_y6ipk")],
+"loop": true,
+"name": &"sword parry",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="2"]
+animations = [{
+"frames": [ExtResource("4")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("5")],
+"loop": true,
+"name": &"double wink",
+"speed": 10.0
+}, {
+"frames": [ExtResource("13")],
+"loop": true,
+"name": &"nohair",
+"speed": 5.0
+}, {
+"frames": [ExtResource("4"), ExtResource("9")],
+"loop": true,
+"name": &"wink",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2ynmm"]
+animations = [{
+"frames": [ExtResource("9_5bv1p")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [ExtResource("67")],
+"loop": true,
+"name": &"pistol idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("30"), ExtResource("31"), ExtResource("29"), ExtResource("26")],
+"loop": true,
+"name": &"pistol melee",
+"speed": 12.0
+}, {
+"frames": [ExtResource("32"), ExtResource("25"), ExtResource("28"), ExtResource("27"), ExtResource("33")],
+"loop": true,
+"name": &"pistol shoot",
+"speed": 12.0
+}, {
+"frames": [ExtResource("17")],
+"loop": true,
+"name": &"shotgun idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("35"), ExtResource("47"), ExtResource("46"), ExtResource("34"), ExtResource("36"), ExtResource("38"), ExtResource("40")],
+"loop": true,
+"name": &"shotgun melee",
+"speed": 12.0
+}, {
+"frames": [ExtResource("44"), ExtResource("42"), ExtResource("45"), ExtResource("43"), ExtResource("64")],
+"loop": true,
+"name": &"shotgun reload",
+"speed": 12.0
+}, {
+"frames": [ExtResource("48"), ExtResource("49"), ExtResource("37"), ExtResource("39"), ExtResource("41")],
+"loop": true,
+"name": &"shotgun shoot",
+"speed": 12.0
+}, {
+"frames": [ExtResource("18")],
+"loop": true,
+"name": &"sniper idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("57"), ExtResource("45_8xlu6"), ExtResource("56"), ExtResource("61"), ExtResource("63")],
+"loop": true,
+"name": &"sniper melee",
+"speed": 12.0
+}, {
+"frames": [ExtResource("58"), ExtResource("59"), ExtResource("62"), ExtResource("65"), ExtResource("52")],
+"loop": true,
+"name": &"sniper shoot",
+"speed": 12.0
+}, {
+"frames": [ExtResource("23"), ExtResource("19"), ExtResource("21"), ExtResource("22"), ExtResource("20")],
+"loop": true,
+"name": &"sword estoc",
+"speed": 12.0
+}, {
+"frames": [ExtResource("53"), ExtResource("55"), ExtResource("24"), ExtResource("16")],
+"loop": true,
+"name": &"sword hit",
+"speed": 12.0
+}, {
+"frames": [ExtResource("66")],
+"loop": true,
+"name": &"sword idle",
+"speed": 5.0
+}, {
+"frames": [ExtResource("50"), ExtResource("54"), ExtResource("51")],
+"loop": true,
+"name": &"sword parry",
+"speed": 12.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_au6nf"]
+radius = 1.0
+height = 40.0
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 3
+collision_mask = 256
+safe_margin = 0.2
+script = ExtResource("10")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_i437s")
+
+[node name="ComputeCheveux" type="Node2D" parent="."]
+script = ExtResource("2_86n5q")
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -4)
+frames = SubResource("4")
+animation = &"exist"
+playing = true
+offset = Vector2(0, 4)
+script = ExtResource("12")
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("11")
+
+[node name="Bras gauche" type="AnimatedSprite2D" parent="Node2D"]
+position = Vector2(-4, -3)
+z_index = -1
+frames = SubResource("SpriteFrames_tbh5b")
+animation = &"sword estoc"
+frame = 1
+offset = Vector2(4, 3)
+script = ExtResource("62_jphkh")
+
+[node name="Head" type="AnimatedSprite2D" parent="Node2D"]
+frames = SubResource("2")
+animation = &"nohair"
+playing = true
+
+[node name="Bras droit" type="AnimatedSprite2D" parent="Node2D"]
+position = Vector2(-4, -3)
+frames = SubResource("SpriteFrames_2ynmm")
+animation = &"sword estoc"
+frame = 1
+offset = Vector2(4, 3)
+script = ExtResource("14")
+
+[node name="Area2d" type="Area2D" parent="Node2D/Bras droit"]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("83_p0sjc")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Node2D/Bras droit/Area2d"]
+position = Vector2(12, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_au6nf")
+
+[node name="RemoteTransform2d" type="RemoteTransform2D" parent="Node2D/Bras droit"]
+remote_path = NodePath("../../Bras gauche")
+update_scale = false
+
+[node name="Cheveux" type="Node2D" parent="Node2D"]
+position = Vector2(-1, -13)

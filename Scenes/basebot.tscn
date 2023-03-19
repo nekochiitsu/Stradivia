@@ -1,19 +1,25 @@
 [gd_scene load_steps=8 format=3 uid="uid://ddmvynnjqvey4"]
 
 [ext_resource type="Script" path="res://Scripts/ennemies/basebot.gd" id="1_w5j6x"]
-[ext_resource type="Texture2D" uid="uid://b2e0jxy11yr5t" path="res://Sprites/ennemies/basebot/robot2.png" id="2_62g0h"]
-[ext_resource type="Texture2D" uid="uid://rwntuwab3nxi" path="res://Sprites/ennemies/basebot/robot1.png" id="2_n1leo"]
+[ext_resource type="Texture2D" uid="uid://ktg53c0lijef" path="res://Sprites/ennemies/basebot/robot2.png" id="2_62g0h"]
+[ext_resource type="Texture2D" uid="uid://bf4wlfj0pouwt" path="res://Sprites/ennemies/basebot/robot1.png" id="2_n1leo"]
 [ext_resource type="Script" path="res://Scenes/MobHitbox.gd" id="4_7j5n6"]
 [ext_resource type="Script" path="res://Scripts/name.gd" id="4_j17tw"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_y7nhi"]
 animations = [{
-"frames": [ExtResource("2_62g0h")],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_62g0h")
+}],
 "loop": true,
 "name": &"damages",
 "speed": 5.0
 }, {
-"frames": [ExtResource("2_n1leo")],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_n1leo")
+}],
 "loop": true,
 "name": &"default",
 "speed": 5.0
@@ -28,7 +34,7 @@ collision_mask = 256
 script = ExtResource("1_w5j6x")
 
 [node name="Sprite2d" type="AnimatedSprite2D" parent="."]
-frames = SubResource("SpriteFrames_y7nhi")
+sprite_frames = SubResource("SpriteFrames_y7nhi")
 
 [node name="CollisionShape2d" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
